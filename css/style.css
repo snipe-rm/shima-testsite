@@ -26,16 +26,20 @@ body {
 /* 共通部分 */
 .container {
   width: 1000px;
-  margin: 80px auto;
+  margin: 160px auto 80px;
 }
 
 /* header 部分 */
 .header {
+  width: 100%;
   padding: 30px 0;
-  background-color: #fbe7a099;
-  backdrop-filter: blur(10px);
+  background-color: #fbe7a0bb;
+  backdrop-filter: blur(5px);
   text-align: center;
   box-shadow: 0 0 5px #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .header > h1 {
   width: fit-content;
