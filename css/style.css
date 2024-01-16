@@ -70,6 +70,9 @@ body {
 .content:nth-of-type(odd) > .content-inner{
   flex-direction: row-reverse;
 }
+.content:nth-of-type(even) .content-ttl {
+  background-color: #d6bb0b;
+}
 .content-text {
   line-height: 1.8;
   width: 40%;
