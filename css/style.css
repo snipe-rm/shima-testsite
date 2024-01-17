@@ -40,6 +40,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 .header > h1 {
   width: fit-content;
@@ -56,6 +57,29 @@ body {
   padding: 180px 0 80px;
   font-family: 'BIZ UDPGothic', sans-serif;
   background-image: radial-gradient(#c2f9cb 0%,#fff 80%);
+  position: relative;
+  z-index: 1;
+}
+.main-text::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50%;
+  aspect-ratio: 3 / 2;
+  background-image: radial-gradient(#f9e9c2cf 0%,#fff0 90%);
+  top: 0;
+  z-index: -1;
+}
+.main-text::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50%;
+  aspect-ratio: 3 / 2;
+  background-image: radial-gradient(#c2f0f9cf 0%,#fff0 90%);
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 /* content 部分（共通） */
 .content-ttl {
